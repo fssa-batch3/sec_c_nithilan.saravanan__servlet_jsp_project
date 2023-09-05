@@ -1,0 +1,164 @@
+@charset "ISO-8859-1";
+
+
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Set background color for the body */
+  body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style the h1 tag */
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Style the form */
+  form {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Style the form labels */
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  /* Style the form inputs */
+  input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the submit button */
+  #submit {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .imgname{
+    width: 70px;
+    height:70px;
+    position: relative;
+    bottom: 20px;
+  }
+  /* Style the delete button */
+  #delete {
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+table{
+    width: 100%;
+ }
+ table  tr{
+     font-size:25px;
+     text-align: center;
+     background-color: #FEC5BB;
+     width:1480px;
+     height:50px;
+     margin-top:70px;
+    display: flex;
+    justify-content: space-around;
+    padding-top:25px;
+ }
+ #flower{
+     width:100px;
+     height:100px;
+    position: relative;
+    bottom:15px;
+    left:20px;
+ }
+ .content{
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+ .main_content{
+     display: flex;
+     flex-flow:column-reverse;
+ }
+ #order_date{
+     position: relative;
+     left:130px;
+     font-size:20px;
+     bottom:3px;
+ }
+ #orderid{
+     position: relative;
+     left:120px;
+     font-size: 25px;
+     top:7px
+ }
+ .rupees{
+     font-size:30px;
+     position: relative;
+     left:90px;
+ }
+ h6{
+     width:250px;
+     font-size:25px;
+     position: relative;
+     left:155px;
+ }
+ #address{
+   width:300px;
+    position: relative;
+    left:90px;
+ }
+ body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  form {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  textarea {
+    width: 100%;
+    padding: 5px;
+  }
+  
+  button {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+  }
+  
