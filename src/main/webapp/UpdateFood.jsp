@@ -13,7 +13,7 @@
 <label for="foodname">
 Enter Food Name: 
 <input type="text" name="foodname"></label>
-<button type="submit">Sumbit</button>
+<button type="submit">Submit</button>
 
 </body>
 </html>
