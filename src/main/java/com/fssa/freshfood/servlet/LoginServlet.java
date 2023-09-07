@@ -34,27 +34,33 @@ public class LoginServlet extends HttpServlet {
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
-		PrintWriter out = response.getWriter();
-		try {
-			List<FreshFood> freshFoodList = FreshfoodService.getAllFoods();
-			request.setAttribute("freshFoodList", freshFoodList);
-			RequestDispatcher dis = request.getRequestDispatcher("/home.jsp");
-			dis.forward(request, response);
-			
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // Initialize a PrintWriter to write the response back to the client
+        PrintWriter out = response.getWriter();
+
+        try {
+            // Call a service (FreshfoodService) to retrieve a list of FreshFood items
+            List<FreshFood> freshFoodList = FreshfoodService.getAllFoods();
+
+            // Set the freshFoodList as an attribute in the request object
+            request.setAttribute("freshFoodList", freshFoodList);
+
+            // Create a RequestDispatcher to forward the request to a JSP page named "home.jsp"
+            RequestDispatcher dis = request.getRequestDispatcher("/home.jsp");
+
+            // Forward the request and response objects to the "home.jsp" page for rendering
+            dis.forward(request, response);
+        } catch (SQLException e) {
+            // If a SQLException is thrown during the process, print the exception details
+            e.printStackTrace();
+        }
+    }
+
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
 

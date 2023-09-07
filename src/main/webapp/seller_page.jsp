@@ -66,6 +66,9 @@
         </tr> -->
       </table>
       <div class="main_content">
+      
+      <a href ="deleteFood.jsp">Delete Food</a>
+      <a href ="UpdateFood.jsp">Update Food</a>
 
       </div>
       <script src="../assets/js/seller-page.js"></script>

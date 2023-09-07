@@ -7,13 +7,13 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h2>Delete food</h2>
-<form action="DeleteFoodServlet" method="GET">
+
+<h2>Update food</h2>
+<form action="EditFoodServlet" method="GET">
 <label for="foodname">
 Enter Food Name: 
 <input type="text" name="foodname"></label>
-<button type="submit">Delete</button>
+<button type="submit">Sumbit</button>
 
-</form>
 </body>
 </html>

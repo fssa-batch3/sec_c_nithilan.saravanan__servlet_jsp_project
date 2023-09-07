@@ -1,25 +1,28 @@
 package com.fssa.freshfood.servlet;
 
 import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.fssa.freshfood.model.FreshFood;
 import com.fssa.freshfood.service.FreshfoodService;
 
 /**
- * Servlet implementation class DeleteFoodServlet
+ * Servlet implementation class EditFoodServlet
  */
-@WebServlet("/DeleteFoodServlet")
-public class DeleteFoodServlet extends HttpServlet {
+@WebServlet("/EditFoodServlet")
+public class EditFoodServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public DeleteFoodServlet() {
+    public EditFoodServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -28,16 +31,19 @@ public class DeleteFoodServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-//		response.getWriter().append("Served at: ").append(request.getContextPath());
+	
 		String name = request.getParameter("foodname");
-		FreshfoodService ser = new FreshfoodService();
+		
+		FreshFood food = null;
 		try {
-			ser.deleteFoodService(name);
+			food=	FreshfoodService.getFoodDetailsService(name);
 		} catch (Exception e) {
 			response.getWriter().append(e.getMessage());
 		}
 		
+		request.setAttribute("FreshFood", food );
+		RequestDispatcher rd =  request.getRequestDispatcher("Update.jsp");
+		rd.forward(request, response);
 	}
 
 	/**
