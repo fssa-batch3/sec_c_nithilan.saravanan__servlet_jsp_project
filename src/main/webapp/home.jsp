@@ -98,7 +98,7 @@
 				<div class="border"></div>
 				<div class="list-card">
 					<img src="assets/images/biryani/goan-fish-biryani.jpg" alt="error">
-					<a href="#biriyani" class="list-name">Biryani</a>
+					<a href="#biriyani" class="list-name">Biriyani</a>
 				</div>
 				<div class="list-card">
 					<img src="assets/images/chicken/Chicken_roast.jpg" alt="error">

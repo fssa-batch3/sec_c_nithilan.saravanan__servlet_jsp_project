@@ -13,7 +13,7 @@
   <h1>Add Food Product</h1>
  
   <form id="formbtn" method="post" action="AddProductServlet">
-    <label for="request_title">food name:</label>
+    <label for="request_title">Food Name:</label>
     <input type="text" id="food_name" name="title" required>
     
     <label for="requested_by">Hotel Name</label>
@@ -67,8 +67,8 @@
       </table>
       <div class="main_content">
       
-      <a href ="deleteFood.jsp">Delete Food</a>
-      <a href ="UpdateFood.jsp">Update Food</a>
+     <h1> <a href ="deleteFood.jsp">Delete Food</a></h1>
+      <h1><a href ="UpdateFood.jsp">Update Food</a></h1>
 
       </div>
       <script src="../assets/js/seller-page.js"></script>
